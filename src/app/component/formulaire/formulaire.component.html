@@ -1,0 +1,29 @@
+<form>
+  <select required>
+    <option value="" disabled selected hidden>Veuillez choisir une Catégorie</option>
+    <option>Boomer</option>
+    <option>Coomer</option>*
+    <option>Chad</option>
+    <option>Doomer</option>
+    <option>Mooner</option>
+    <option>Zoomer</option>
+</select>
+
+  <div class="champs">
+    <input [(ngModel)]="this.produit.nom" name="nom"  type="text" placeholder="Nom">
+  </div>
+  <div class="champs">
+    <input [(ngModel)]="this.produit.couleur" name="couleur" type="text" placeholder="Prénoms">
+  </div>
+  <div class="champs">
+    <input  [(ngModel)]="this.produit.taille" name="taille" type="text" placeholder="Age">
+  </div>
+
+  <div class="champs">
+    <input  [(ngModel)]="this.produit.prix" name="prix" type="number" placeholder="Age">
+  </div>
+
+  <button (click)="save(this.produit)">Enregistrer</button>
+</form>
+
+
