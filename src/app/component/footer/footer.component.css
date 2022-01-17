@@ -26,6 +26,7 @@ img {
 .first {
   display: flex;
   flex-wrap: wrap;
+
 }
 .first > p {
   margin-left: 30%;
@@ -48,6 +49,8 @@ form {
     max-width: 300px;
     margin-left: 60%;
     margin-top: 3%;
+    width: 250px;
+
 
   }
 
@@ -69,6 +72,7 @@ form {
       border-radius: 30px;
       background-color: black;
       font-weight: bold;
+      height: 3em;
       color: white;
     }
 

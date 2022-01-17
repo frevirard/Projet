@@ -3,6 +3,7 @@ import { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MockService } from './datasource/mock.service';
 import { Produit } from './BO/produit';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,20 +13,28 @@ import { Produit } from './BO/produit';
 export class AppComponent implements OnInit  {
   title = 'creato';
   produits :Produit [] = []
+  router: string;
   constructor (private http : HttpClient,
-    private mock:MockService) {
-
+    private mock:MockService,
+    private private_router:Router) {
+      this.router = this.private_router.url
   }
+
+
 
   ngOnInit(): void {
-    this.mock.getAll().subscribe(x=>{this.produits = this.produits.concat(x)})
-
-    // console.log (this.produits)
-    // console.log(this.produits[1])
-
-    console.log (this.produits)
 
   }
+cssan() {
+  let x = document.getElementById("je")
 
+  if (x.className === "test") {
+    x.className = "anim"
+
+  } else if (x.className === "anim"){
+    x.className = "test"
+
+  }
+}
 
 }

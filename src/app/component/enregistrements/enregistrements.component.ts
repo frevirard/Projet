@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
+import { Woj } from 'src/app/BO/woj';
 
 @Component({
   selector: 'app-enregistrements',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnregistrementsComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

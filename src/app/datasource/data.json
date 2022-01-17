@@ -1,0 +1,134 @@
+{
+  "produits": [
+    {
+      "id": "131",
+      "nom": "fred",
+      "couleur": "red",
+      "taille": "183",
+      "prix": 15
+    },
+    {
+      "id": "132",
+      "nom": "emrode",
+      "couleur": "blue",
+      "taille": "183",
+      "prix": 15
+    },
+    {
+      "id": "1642354494169",
+      "nom": "Edem",
+      "couleur": "Komlanvi",
+      "taille": "Edem",
+      "prix": 25
+    },
+    {
+      "id": "1642368432215",
+      "nom": "Edem",
+      "couleur": "Komlanvi",
+      "taille": "Edem",
+      "prix": 5445
+    }
+  ],
+  "woj": [
+    {
+      "id": "131",
+      "nom": "fred",
+      "couleur": "red",
+      "taille": "183",
+      "prix": 15
+    },
+    {
+      "id": "1642371068650",
+      "nom": "Edem"
+    },
+    {
+      "id": "1642371233972"
+    },
+    {
+      "id": "1642371413804"
+    },
+    {
+      "id": "1642371454754"
+    },
+    {
+      "id": "1642371504585"
+    },
+    {
+      "id": "1642371509315"
+    },
+    {
+      "id": "1642371509797"
+    },
+    {
+      "id": "1642371510753"
+    },
+    {
+      "id": "1642371511077"
+    },
+    {
+      "id": "1642371511447"
+    },
+    {
+      "id": "1642371582023",
+      "categorie": "Boomer"
+    },
+    {
+      "id": "1642372042438"
+    },
+    {
+      "id": "1642372045763",
+      "categorie": "Boomer",
+      "nom": "Microsoft",
+      "prenom": "Office",
+      "langage": "VBA",
+      "intel": 7
+    },
+    {
+      "id": "1642372316108",
+      "categorie": "Chad"
+    },
+    {
+      "id": "1642372564986"
+    },
+    {
+      "id": "1642372575228"
+    },
+    {
+      "id": "1642372576606"
+    },
+    {
+      "id": "1642375907968"
+    },
+    {
+      "id": "1642375957231"
+    },
+    {
+      "id": "1642408091308",
+      "categorie": "Boomer",
+      "nom": "Edem",
+      "prenom": "Frédéric",
+      "langage": "Anglais",
+      "intel": 7
+    },
+    {
+      "id": "1642408466643",
+      "categorie": "Coomer"
+    },
+    {
+      "id": "1642408783050",
+      "categorie": "Coomer",
+      "nom": "DCLK?Jfc",
+      "prenom": "qsrgv",
+      "langage": "sdv s",
+      "intel": 7809
+    },
+    {
+      "id": "1642408817816",
+      "categorie": "Chad",
+      "nom": "DCLK?Jfc",
+      "prenom": "qsrgv",
+      "langage": "sdv s",
+      "intel": 7809
+    }
+  ]
+}

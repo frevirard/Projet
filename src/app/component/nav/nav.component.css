@@ -58,6 +58,10 @@ a{
     cursor: pointer;
 }
 
+.login>a:hover {
+  color: white;
+  transition: all 0.5s;
+}
 
 a:hover {
   color: white;

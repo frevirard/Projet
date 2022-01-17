@@ -1,8 +1,6 @@
 import { Component,Inject, OnInit } from '@angular/core';
-import { MatSnackBar,} from '@angular/material/snack-bar';
-import { HttpClient } from '@angular/common/http';
 import { MockService } from 'src/app/datasource/mock.service';
-import { Produit } from 'src/app/BO/produit';
+import { Woj } from 'src/app/BO/woj';
 
 
 @Component({
@@ -12,28 +10,24 @@ import { Produit } from 'src/app/BO/produit';
 })
 export class FormulaireComponent implements OnInit {
 
-  produit = { id : Date.now().toString()} as Produit ;
-  data = "fred";
-  produits :Produit [] = []
+ woj = { id : Date.now().toString()} as Woj;
+ wojs: Woj[] = [];
+
+
+
+
 
   constructor(
-   private mas:MatSnackBar,
-   private http:HttpClient,
    private mock:MockService){ }
 
   ngOnInit(): void {
-    this.mock.getAll().subscribe(x=>{this.produits = this.produits.concat(x)})
+    this.mock.getAll().subscribe(x=>{this.wojs = this.wojs.concat(x)})
+
   }
 
-
-
-  save(produit:Produit) {
-    this.produits.push(produit)
-    this.mock.addMember(this.produit)
-    // this.mock.addProduit(this.produit)
-    this.mas.open(this.produit.nom + "Bien enregistré(e) ", 'Undo', {
-      duration: 3000
-     })
+  save(woj:Woj) {
+      this.mock.addWoj(woj)
+      this.woj.id = Date.now().toString()
     ;
   }
 }

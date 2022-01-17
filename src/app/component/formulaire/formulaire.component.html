@@ -1,29 +1,30 @@
 <form>
-  <select required>
-    <option value="" disabled selected hidden>Veuillez choisir une Catégorie</option>
-    <option>Boomer</option>
-    <option>Coomer</option>*
-    <option>Chad</option>
-    <option>Doomer</option>
-    <option>Mooner</option>
-    <option>Zoomer</option>
+  <select required [(ngModel)]="this.woj.categorie" name="categorie">
+    <option [ngValue]="" disabled selected hidden>Veuillez choisir une Catégorie</option>
+    <option [ngValue]="'Boomer'">Boomer</option>
+    <option [ngValue]="'Chad'">Chad</option>
+    <option [ngValue]="'Coomer'">Coomer</option>
+    <option [ngValue]="'Doomer'">Doomer</option>
+    <option [ngValue]="'Mooner'">Moomer</option>
+    <option [ngValue]="'Zoomer'">Zoomer</option>
+
 </select>
 
   <div class="champs">
-    <input [(ngModel)]="this.produit.nom" name="nom"  type="text" placeholder="Nom">
+    <input [(ngModel)]="this.woj.nom" name="nom"  type="text" placeholder="Nom">
   </div>
   <div class="champs">
-    <input [(ngModel)]="this.produit.couleur" name="couleur" type="text" placeholder="Prénoms">
+    <input [(ngModel)]="this.woj.prenom" name="prenom" type="text" placeholder="Prénoms">
   </div>
   <div class="champs">
-    <input  [(ngModel)]="this.produit.taille" name="taille" type="text" placeholder="Age">
+    <input  [(ngModel)]="this.woj.langage" name="langage" type="text" placeholder="Langage">
   </div>
 
   <div class="champs">
-    <input  [(ngModel)]="this.produit.prix" name="prix" type="number" placeholder="Age">
+    <input  [(ngModel)]="this.woj.intel" name="intel" type="number" placeholder="Intel">
   </div>
 
-  <button (click)="save(this.produit)">Enregistrer</button>
+  <button (click)="save(this.woj)">Enregistrer</button>
 </form>
 
 
